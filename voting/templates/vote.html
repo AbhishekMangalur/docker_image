@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote</title>
+</head>
+<body>
+    <h1>Choose Your Favorite</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" name="choice" value="cat">
+            🐱 Vote for Cat
+        </button>
+
+        <button type="submit" name="choice" value="dog">
+            🐶 Vote for Dog
+        </button>
+    </form>
+</body>
+</html>
